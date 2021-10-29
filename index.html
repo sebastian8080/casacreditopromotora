@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+    <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -10,12 +10,6 @@
     <title>Home</title>
 
     <style>
-
-        .contenedor, .contenedor2{
-            position: relative;
-            display: inline-block;
-        }
-
         .contenedor #image_fondo_first{
             width: 100%;
             height: auto;
@@ -33,7 +27,7 @@
             opacity: 0.2;
         }
 
-        .contenedor2 #row-one{
+        #container2 #row-one{
             position: absolute;
             top: 5%;
             text-align: center;
@@ -55,12 +49,12 @@
 
         #texto1, #texto2, #texto3{
             position: absolute;
-            font-size: 30px;
+            font-size: 2em;
         }
 
         #texto1{
             top: 40%;
-            left: 20%;            
+            left: 20%;          
         }
 
         #texto2{
@@ -90,11 +84,13 @@
 </head>
 <body>
 
-    <div class="contenedor">
+    <div class="container">
 
-        <img id="image_fondo_first" src="https://mdbootstrap.com/img/Photos/Others/images/76.jpg" alt="">
+        {{-- <img id="image_fondo_first" src="https://mdbootstrap.com/img/Photos/Others/images/76.jpg" alt=""> --}}
 
-        <div class="row one">
+        <img src="https://mdbootstrap.com/img/Photos/Others/images/76.jpg" class="img-fluid" alt="">
+
+        <div class="row">
             <div id="texto1" class="col-sm-4">
                 Quito
             </div>
@@ -108,22 +104,27 @@
 
     </div>
 
-    <div class="contenedor2">
+    <hr>
 
-        <img id="image_fondo" src="https://images.adsttc.com/media/images/5733/92ba/e58e/cee8/0800/004f/large_jpg/02.jpg?1462997678" alt="">
+    <div class="container position-relative">
 
-        <div id="row-one" class="row">
-            <div style="text-align: center">
+        {{-- <img id="image_fondo" src="https://images.adsttc.com/media/images/5733/92ba/e58e/cee8/0800/004f/large_jpg/02.jpg?1462997678" alt=""> --}}
+        <img src="https://images.adsttc.com/media/images/5733/92ba/e58e/cee8/0800/004f/large_jpg/02.jpg?1462997678" class="img-fluid opacity-25" alt="">
+
+        <div class="row position-absolute top-0 start-50 translate-middle mt-5" style="text-align: center">
+            <div>
                 <h2>Bienvenidos a su nuevo hogar y a su mejor inversión</h2>
             </div>
         </div>
 
-        <div class="row">
+        <div class="row position-absolute top-50 start-50 translate-middle" style="width: 90%">
 
             <div class="col">
                 <h3 style="top: 25%">Proyectos Ecuador</h3>
+                <br>
                 <p style="top: 50%">Conoce cada uno de los proyectos que tenemos y conoce la nueva experiencia en proyectos inmobiliarios</p>
-                <a href="#">Ver todos los proyectos</a>
+                <br><br>
+                <a href="#" class="text-decoration-underline">Ver todos los proyectos</a>
             </div>
 
             <div class="col">
@@ -152,7 +153,7 @@
             </div>
         </div>
 
-        <div id="row-three" class="row">
+        <div class="row position-absolute bottom-0 start-50 translate-middle-x">
             <div>
                 <h5>Partners</h5>
             </div>
@@ -160,39 +161,126 @@
 
     </div>
 
-    <div class="contenedor3">
+    <hr>
+
+    <div class="container">
 
         <div class="row">
 
-            <div class="col-sm 4">
-                <h1>Villas</h1>
-                <img class="img-thumbnail" src="https://www.collinsdictionary.com/images/full/villa_107457074.jpg" alt="">
+            <div class="col-md-4">
+                <div class="thumbnail">
+                    <h1>Villas</h1>
+                    <img class="img-thumbnail" src="https://www.collinsdictionary.com/images/full/villa_107457074.jpg" alt="">
+                </div>
             </div>
-            <div class="col-sm-4">
-                <h1>Departamentos</h1>
-                <img class="img-thumbnail" src="https://www.inmuebles24.com/noticias/wp-content/uploads/2020/01/departamentos-de-lujo-2-1024x674.jpeg" alt="">
+            <div class="col-md-4">
+                <div class="thumbnail">
+                    <h1>Departamentos</h1>
+                    <img class="img-thumbnail" src="https://www.inmuebles24.com/noticias/wp-content/uploads/2020/01/departamentos-de-lujo-2-1024x674.jpeg" alt="">
+                </div>
             </div>
-            <div class="col-sm-4">
-                <h1>Suites</h1>
-                <img class="img-thumbnail" src="https://tecnohotelnews.com/wp-content/uploads/2018/07/shutterstock_1039615402.jpg" alt="">
+            <div class="col-md-4">
+                <div class="thumbnail">
+                    <h1>Suites</h1>
+                    <img class="img-thumbnail" src="https://tecnohotelnews.com/wp-content/uploads/2018/07/shutterstock_1039615402.jpg" alt="">
+                </div>
             </div>
         </div>
     </div>
 
-    <div class="contenedor4">
+    <hr>
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-sm-6 d-flex justify-content-center mt-4">
+                <h4>Conozca todas las propiedades</h4><svg xmlns="http://www.w3.org/2000/svg" width="30" height="35" fill="currentColor" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+                    <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                  </svg>
+            </div>
+            <div class="col-sm-6">
+                <p>Casa Credito Promotora Inmobiliaria, el portal que cambiará la perspectiva de promocionar inmuebles en Ecuador</p>
+                <button class="btn btn-secondary">Nosotros</button>
+                <button class="btn btn-secondary">Presentacion</button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <hr>
+
+    <div class="container position-relative">
+
+        <img src="https://www.cuerpomente.com/medio/2019/11/04/familia_db408d1a_1200x630.jpg" class="img-fluid" alt="">
 
         <div class="row">
 
             <div class="col-sm-6">
-                Conozca todas las propiedades
-            </div>
-            <div class="col-sm-6">
+
+                <h1 class="position-absolute bottom-50 end-50 text-white mr-10">
+                   Lo que siempre has querido
+                </h1>
+
+                <div class="position-absolute d-grid gap-2 d-md-flex justify-content-md-end">
+                    <button type="submit" class="btn btn-danger me-md-2">Solicite un credito ></button>
+                </div>
 
             </div>
 
         </div>
 
     </div>
+
+    <hr>
+
+    <div class="container">
+
+        <div class="row">
+            
+            <div class="col-sm-5 border text-center align-self-center">
+                
+                <h1>INFORMACION DE CONTACTO</h1>
+
+                <p>info@casacreditopromotora.com</p>
+                <p>+593 983 849 073</p>
+
+            </div>
+
+            <div class="col-sm-7 mr-5">
+
+                <h2>Solicita información sobre propiedades</h2>
+                <form>
+                    <div class="mb-3">
+                      <label for="nombre" class="form-label">Nombre</label>
+                      <input type="text" class="form-control" id="nombre">
+                    </div>
+                    <div class="mb-3">
+                      <label for="telefono-celular" class="form-label">Telefono/Celular</label>
+                      <input type="text" class="form-control" id="telefono-celular">
+                    </div>
+                    <div class="mb-3">
+                        <label for="correo" class="form-label">Correo Electrónico</label>
+                        <input type="email" class="form-control" id="correo">
+                      </div>
+                      <div class="mb-3">
+                        <label for="mensaje" class="form-label">Mensaje</label>
+                        <input type="text" class="form-control" id="mensaje">
+                      </div>
+                      <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                        <button type="submit" class="btn btn-danger me-md-2">Enviar mensaje</button>
+                    </div>
+                  </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <br>
+    <br>
 
 
 
