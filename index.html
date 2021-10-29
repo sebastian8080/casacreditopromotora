@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>Home</title>
+
+    <style>
+
+        .contenedor, .contenedor2{
+            position: relative;
+            display: inline-block;
+        }
+
+        .contenedor #image_fondo_first{
+            width: 100%;
+            height: auto;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+        }
+
+        .contenedor2 #image_fondo{
+            width: 100%;
+            height: auto;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            opacity: 0.2;
+        }
+
+        .contenedor2 #row-one{
+            position: absolute;
+            top: 5%;
+            text-align: center;
+        }
+
+        .contenedor2 .row{
+            position: absolute;
+            top: 25%;
+        }
+
+        .contenedor2 #row-three{
+            position: absolute;
+            top: 82%;
+        }
+
+        .contenedor2 .row img{
+            width: 50px;
+        }
+
+        #texto1, #texto2, #texto3{
+            position: absolute;
+            font-size: 30px;
+        }
+
+        #texto1{
+            top: 40%;
+            left: 20%;            
+        }
+
+        #texto2{
+            top: 40%;
+            left: 43%;
+        }
+
+        #texto3{
+            top: 40%;
+            left: 70%;
+        }
+
+        #texto4{
+            font-size: 30px;
+            text-align: center;
+        }
+
+        .contenedor2 #texto_image_two_row_two{
+            top: 40%;
+        }
+
+        .contenedor3 .row img{
+            height: auto;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="contenedor">
+
+        <img id="image_fondo_first" src="https://mdbootstrap.com/img/Photos/Others/images/76.jpg" alt="">
+
+        <div class="row one">
+            <div id="texto1" class="col-sm-4">
+                Quito
+            </div>
+            <div id="texto2" class="col-sm-4">
+                Guayaquil
+            </div>
+            <div id="texto3" class="col-sm-4">
+                Cuenca
+            </div>
+        </div>
+
+    </div>
+
+    <div class="contenedor2">
+
+        <img id="image_fondo" src="https://images.adsttc.com/media/images/5733/92ba/e58e/cee8/0800/004f/large_jpg/02.jpg?1462997678" alt="">
+
+        <div id="row-one" class="row">
+            <div style="text-align: center">
+                <h2>Bienvenidos a su nuevo hogar y a su mejor inversión</h2>
+            </div>
+        </div>
+
+        <div class="row">
+
+            <div class="col">
+                <h3 style="top: 25%">Proyectos Ecuador</h3>
+                <p style="top: 50%">Conoce cada uno de los proyectos que tenemos y conoce la nueva experiencia en proyectos inmobiliarios</p>
+                <a href="#">Ver todos los proyectos</a>
+            </div>
+
+            <div class="col">
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://espanol.allstate.com/resources/MiAllstate/images/tools-resources/seguro-de-casa/Complejo-de-apartamentos_iStock.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item active">
+                            <img src="http://www.cortezberlangabufete.com/blog/wp-content/uploads/2017/04/Fotolia_95775050_Subscription_Monthly_M.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item active">
+                            <img src="https://www.alvarezramosabogados.com/wp/wp-content/uploads/2018/03/blog62-1280x720.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+                <p>Soho-Quito</p>
+            </div>
+        </div>
+
+        <div id="row-three" class="row">
+            <div>
+                <h5>Partners</h5>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="contenedor3">
+
+        <div class="row">
+
+            <div class="col-sm 4">
+                <h1>Villas</h1>
+                <img class="img-thumbnail" src="https://www.collinsdictionary.com/images/full/villa_107457074.jpg" alt="">
+            </div>
+            <div class="col-sm-4">
+                <h1>Departamentos</h1>
+                <img class="img-thumbnail" src="https://www.inmuebles24.com/noticias/wp-content/uploads/2020/01/departamentos-de-lujo-2-1024x674.jpeg" alt="">
+            </div>
+            <div class="col-sm-4">
+                <h1>Suites</h1>
+                <img class="img-thumbnail" src="https://tecnohotelnews.com/wp-content/uploads/2018/07/shutterstock_1039615402.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="contenedor4">
+
+        <div class="row">
+
+            <div class="col-sm-6">
+                Conozca todas las propiedades
+            </div>
+            <div class="col-sm-6">
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    
+</body>
+</html>
