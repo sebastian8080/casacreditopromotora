@@ -4,296 +4,241 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-
     <title>Home</title>
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
     <style>
-        .contenedor #image_fondo_first{
-            width: 100%;
-            height: auto;
-            margin-left: auto;
-            margin-right: auto;
-            display: block;
-        }
 
-        .contenedor2 #image_fondo{
-            width: 100%;
-            height: auto;
-            margin-left: auto;
-            margin-right: auto;
-            display: block;
-            opacity: 0.2;
-        }
+    img{
+        width: 100%;
+        height: 100%;
+    }
 
-        #container2 #row-one{
-            position: absolute;
-            top: 5%;
-            text-align: center;
-        }
+    /*Linea pequeña debajo de BIENVENIDOS A SU NUEVO HOGAR Y A SU MEJOR INVERSION*/
+    #linea_pequeña{
+      width: 40px;
+      height: 2px;
+      margin: auto;
+      color: red;
+      font-weight: bold;
+    }
 
-        .contenedor2 .row{
-            position: absolute;
-            top: 25%;
-        }
+    /*Para hacer la parte superior e inferior opaca de la imagen de la segunda fila*/
+    #fila1, #fila3{
+      background-color: #ffffff;
+      opacity: 0.6;
+      height: 130px;
+    }
 
-        .contenedor2 #row-three{
-            position: absolute;
-            top: 82%;
-        }
+    /*Para que el texto de la parte opaca de la imagen no esta opaco*/
+    #texto_fila1{
+      font-weight: bold;
+      color: #000000;
+    }
 
-        .contenedor2 .row img{
-            width: 50px;
-        }
+    /*Segundo carrusel de la segunda fila en la imagen opaca*/
+    .carrusel{
+      margin: 70px;
+    }
 
-        #texto1, #texto2, #texto3{
-            position: absolute;
-            font-size: 2em;
-        }
+    /*Tres imagenes de VILLAS DEPARTAMENTOS Y SUITES*/
+    .fila-imagenes{
+      width: 100%;
+      height: 150%;
+    }
 
-        #texto1{
-            top: 40%;
-            left: 20%;          
-        }
+    /*FILA PEQUEÑA DE CONOZCA TODAS LAS PROPIEDADES QUE TIENE UN COLOR MEDIO GRIS*/
+    #fila4{
+      background-color: #cac7c7;
+    }
 
-        #texto2{
-            top: 40%;
-            left: 43%;
-        }
+    /*HACER EL TEXTO DE VILLAS DEPARTAMENTOS Y SUITES EN COLOR BLANCO*/
+    .texto-imagenes{
+      color: #ffffff;
+      -webkit-text-stroke: 1px rgb(162, 157, 157);
+    }
 
-        #texto3{
-            top: 40%;
-            left: 70%;
-        }
-
-        #texto4{
-            font-size: 30px;
-            text-align: center;
-        }
-
-        .contenedor2 #texto_image_two_row_two{
-            top: 40%;
-        }
-
-        .contenedor3 .row img{
-            height: auto;
-        }
+    #card-form{
+      background-color:  #e2dcdc;
+      color: #635f5f;
+    }
 
 
-/*
-        CARRUSEL
-*/
 
-        
     </style>
 </head>
 <body>
 
     <div class="container">
 
-        <img src="https://mdbootstrap.com/img/Photos/Others/images/76.jpg" class="img-fluid" alt="">
+        <!--PRIMERA FILA DEL CARRUSEL-->
 
         <div class="row">
-            <div id="texto1" class="col-sm-4">
-                Quito
-            </div>
-            <div id="texto2" class="col-sm-4">
-                Guayaquil
-            </div>
-            <div id="texto3" class="col-sm-4">
-                Cuenca
-            </div>
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="https://i2.wp.com/moovemag.com/wp-content/uploads/2020/12/inversion-inmobiliaria.jpg?fit=700%2C459&ssl=1&resize=1280%2C720" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://www.100plandenegocios.com/wp-content/uploads/2021/07/negocio-inmobiliaria.png" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://i1.wp.com/clinmoo.com/wp-content/uploads/2019/01/estudio-de-oferta-inmobiliaria-e1549278500658.jpeg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
         </div>
 
-    </div>
+        <!--SEGUNDA FILA PROYECTOS ECUADOR-->
 
-    <hr>
+        <hr>
 
-    <div class="container position-relative">
+        <div class="row position-relative">
 
-        <img src="https://images.adsttc.com/media/images/5733/92ba/e58e/cee8/0800/004f/large_jpg/02.jpg?1462997678" class="img-fluid opacity-25" alt="">
-
-        <div class="row position-absolute top-0 start-50 translate-middle mt-5" style="text-align: center">
-            <div>
-                <h2>Bienvenidos a su nuevo hogar y a su mejor inversión</h2>
-            </div>
-        </div>
-
-        <div class="row position-absolute top-50 start-50 translate-middle" style="width: 90%">
-
-            <div class="col">
-                <h3 style="top: 25%">Proyectos Ecuador</h3>
-                <br>
-                <p style="top: 50%">Conoce cada uno de los proyectos que tenemos y conoce la nueva experiencia en proyectos inmobiliarios</p>
-                <br><br>
-                <a href="#" class="text-decoration-underline">Ver todos los proyectos</a>
+            <img src="https://www.nosotros-los-arquitectos.com/wp-content/uploads/2020/03/Plano-arquitectonico-blogc-1-1024x684-1.jpg" class="img-fluid" alt="">
+          
+            <div id="fila1" class="row position-absolute">
+              <h2 id="texto_fila1" class="text-center opacity-0">BIENVENIDOS A SU NUEVO HOGAR Y A SU MEJOR INVERSIÓN</h2>
+              <hr id="linea_pequeña">
             </div>
 
-            <div class="col">
-                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="row">
+              <div class="col-sm-12 col-md-6 position-absolute top-50 start-0 translate-middle-y mr-5">
+                <div class="text-center">
+                  <h3>Proyectos Ecuador</h3>
+                  <p>Conoce cada uno de los proyectos que tenemos y conoce la nueva experiencia en proyectos inmobiliarios</p>
+                  <br>
+                  <a href="#">Ver todos los proyectos ></a>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-6 position-absolute top-50 end-0 translate-middle-y">
+                <div class="carrusel">
+                  <div id="carouselExampleControls2" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="https://espanol.allstate.com/resources/MiAllstate/images/tools-resources/seguro-de-casa/Complejo-de-apartamentos_iStock.jpg" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item active">
-                            <img src="http://www.cortezberlangabufete.com/blog/wp-content/uploads/2017/04/Fotolia_95775050_Subscription_Monthly_M.jpg" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item active">
-                            <img src="https://www.alvarezramosabogados.com/wp/wp-content/uploads/2018/03/blog62-1280x720.jpg" class="d-block w-100" alt="...">
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
-                    </div>
-                </div>
-                <h5>Soho-Quito</h5>
-                <p>Soho 174 Un estilo unico que refleja la calidad de vida que deseas tener, la mejor ubicacion.</p>
-            </div>
-        </div>
-
-        <div class="row position-absolute bottom-0 start-50 translate-middle-x" style="height: 20%; width:100%">
-            <div>
-                <h5 class="text-center">Partners</h5>
-                <div class="row">
-                    <div class="col-sm-12">
-                         
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </div>
-
-    <hr>
-
-    <div class="container">
-
-        <div class="row">
-
-            <div class="col-md-4">
-                <div class="thumbnail">
-                    <h1>Villas</h1>
-                    <img class="img-thumbnail" src="https://www.collinsdictionary.com/images/full/villa_107457074.jpg" alt="">
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="thumbnail">
-                    <h1>Departamentos</h1>
-                    <img class="img-thumbnail" src="https://www.inmuebles24.com/noticias/wp-content/uploads/2020/01/departamentos-de-lujo-2-1024x674.jpeg" alt="">
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="thumbnail">
-                    <h1>Suites</h1>
-                    <img class="img-thumbnail" src="https://tecnohotelnews.com/wp-content/uploads/2018/07/shutterstock_1039615402.jpg" alt="">
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <hr>
-
-    <div class="container">
-
-        <div class="row">
-
-            <div class="col-sm-6 d-flex justify-content-center mt-4">
-                <h4>Conozca todas las propiedades</h4><svg xmlns="http://www.w3.org/2000/svg" width="30" height="35" fill="currentColor" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
-                    <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
-                  </svg>
-            </div>
-            <div class="col-sm-6">
-                <p>Casa Credito Promotora Inmobiliaria, el portal que cambiará la perspectiva de promocionar inmuebles en Ecuador</p>
-                <button class="btn btn-secondary">Nosotros</button>
-                <button class="btn btn-secondary">Presentacion</button>
-            </div>
-
-        </div>
-
-    </div>
-
-    <hr>
-
-    <div class="container position-relative">
-
-        <img src="https://www.cuerpomente.com/medio/2019/11/04/familia_db408d1a_1200x630.jpg" class="img-fluid" alt="">
-
-        <div class="row">
-
-            <div class="col-sm-6 position-absolute top-50 start-50 translate-middle">
-
-                <h1 class="text-white">
-                   Lo que siempre has querido     
-                </h1>
-
-                <button type="submit" class="btn btn-danger">Solicite un credito ></button>
-                
-            </div>
-
-        </div>
-
-    </div>
-
-    <hr>
-
-    <div class="container">
-
-        <div class="row">
-            
-            <div class="col-sm-5 border text-center align-self-center">
-                
-                <h1>INFORMACION DE CONTACTO</h1>
-
-                <p>info@casacreditopromotora.com</p>
-                <p>+593 983 849 073</p>
-
-            </div>
-
-            <div class="col-sm-7 mr-5">
-
-                <h2>Solicita información sobre propiedades</h2>
-                <form>
-                    <div class="mb-3">
-                      <label for="nombre" class="form-label">Nombre</label>
-                      <input type="text" class="form-control" id="nombre">
-                    </div>
-                    <div class="mb-3">
-                      <label for="telefono-celular" class="form-label">Telefono/Celular</label>
-                      <input type="text" class="form-control" id="telefono-celular">
-                    </div>
-                    <div class="mb-3">
-                        <label for="correo" class="form-label">Correo Electrónico</label>
-                        <input type="email" class="form-control" id="correo">
+                      <div class="carousel-item active">
+                        <img src="https://www.casasparaconstruir.com/projetos/122/01.jpg" class="d-block w-100" alt="...">
                       </div>
-                      <div class="mb-3">
-                        <label for="mensaje" class="form-label">Mensaje</label>
-                        <input type="text" class="form-control" id="mensaje">
+                      <div class="carousel-item">
+                        <img src="https://i.pinimg.com/originals/6b/57/80/6b578015c6ddf83596b9ebc724bd576d.jpg" class="d-block w-100" alt="...">
                       </div>
-                      <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                        <button type="submit" class="btn btn-danger me-md-2">Enviar mensaje</button>
+                      <div class="carousel-item">
+                        <img src="https://i.pinimg.com/736x/e6/87/56/e68756b224c6a89424742d207a87e30e.jpg" class="d-block w-100" alt="...">
+                      </div>
                     </div>
-                  </form>
-
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>  
+                  <h6>Ohio Quito</h6>
+                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis consectetur accusamus dicta quam recusandae. Quae distinctio velit id facilis illum autem libero. Quae at magni aliquam quos voluptates rem porro.</p>
+                </div>
+              </div>
             </div>
+
+            <div id="fila3" class="row position-absolute bottom-0">
+              <h3 class="text-center">Partners</h3>
+            </div>
+        </div>
+
+        <hr>
+
+        <!--TERCERA FILA-->
+        <div id="row3" class="row">
+          <div class="col-sm-4">
+            <h1 class="texto-imagenes">VILLAS</h1>
+            <a href="#"><img class="fila-imagenes" src="https://q-xx.bstatic.com/xdata/images/hotel/max1024x768/270955089.jpg?k=0ff923c4d7ef12ce13b44cc582d44ac8ac4d424ef6871d492e96301d5b27211b&o=" alt=""></a>
+          </div>
+          <div class="col-sm-4">
+            <h1 class="texto-imagenes">DEPARTAMENTOS</h1>
+            <a href="#"><img class="fila-imagenes" src="https://media-cdn.tripadvisor.com/media/vr-splice-j/0a/9a/35/22.jpg" alt=""></a>
+          </div>
+          <div class="col-sm-4">
+            <h1 class="texto-imagenes">SUITES</h1>
+            <a href="#"><img class="fila-imagenes" src="https://images.adsttc.com/media/images/5a8e/392f/f197/cc42/b800/05bc/large_jpg/Maleku_3.jpg?1519270174" alt=""></a>
+          </div>
+        </div>
+        {{-- <br><br><br><br><br><br><br><br> --}}
+        <hr style="margin-top: 20%">
+
+        <!--CUARTA FILA DE CONOZCA TODAS LAS PROPIEDADES-->
+        <div id="fila4" class="row">
+
+          <div class="col-sm-6">
+            <h3 class="text-center mt-5">Conozca todas las propiedades
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+              </svg>
+            </h3>
+          </div>
+
+          <div class="col-sm-6">
+            <p class="mt-5">Casa Credito Promotora Inmobiliaria, el portal que cambiará la perspectiva de promocionar inmuebles en Ecuador</p>
+            <div class="mb-5">
+              <button class="btn btn-secondary">Nosotros</button><button class="btn btn-secondary">Presentación</button>
+            </div>
+          </div>
 
         </div>
 
+        <hr>
+
+        {{--QUINTA FILA IMAGEN DE CREDITO--}}
+        <div class="row">
+          <img src="https://www.cuerpomente.com/medio/2019/11/04/familia_db408d1a_1200x630.jpg" class="img-fluid" alt="">
+        </div>
+
+        <hr>
+
+        {{--SEXTA FILA ULTIMA--}}
+        <div class="row m-5 pb-5">
+          <div id="card-form" class="col-sm-5 text-center rounded">
+            <h2 class="mt-5">INFORMACION DE CONTACTO</h2>
+            <p>info@casacreditopromotora.com</p>
+            <p>+593 983 849 073</p>
+          </div>
+          <div class="col-sm-7 pb-5">
+            <form class="">
+              <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="nombre">
+              </div>
+              <div class="mb-3">
+                <label for="telefono-celular" class="form-label">Telefono / Celular</label>
+                <input type="number" class="form-control" id="telefono-celular">
+              </div>
+              <div class="mb-3">
+                <label for="correo" class="form-label">Correo electronico</label>
+                <input type="email" class="form-control" id="correo" aria-describedby="emailHelp">
+              </div>
+              <div class="mb-3">
+                <label for="mensaje" class="form-label">Mensaje</label>
+                <input type="text" class="form-control" id="mensaje">
+              </div>
+              <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                <button type="submit" class="btn btn-danger me-md-2 rounded-pill">Enviar mensaje</button>
+              </div>
+            </form>
+          </div>
+        </div>
+
     </div>
-
-    <br>
-    <br>
-
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
     
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
 </body>
 </html>
