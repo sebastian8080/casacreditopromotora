@@ -15,6 +15,7 @@
         height: 100%;
     }
 
+    /*Linea pequeña debajo de BIENVENIDOS A SU NUEVO HOGAR Y A SU MEJOR INVERSION*/
     #linea_pequeña{
       width: 40px;
       height: 2px;
@@ -23,30 +24,36 @@
       font-weight: bold;
     }
 
+    /*Para hacer la parte superior e inferior opaca de la imagen de la segunda fila*/
     #fila1, #fila3{
       background-color: #ffffff;
       opacity: 0.6;
       height: 130px;
     }
 
+    /*Para que el texto de la parte opaca de la imagen no esta opaco*/
     #texto_fila1{
       font-weight: bold;
       color: #000000;
     }
 
+    /*Segundo carrusel de la segunda fila en la imagen opaca*/
     .carrusel{
       margin: 70px;
     }
 
+    /*Tres imagenes de VILLAS DEPARTAMENTOS Y SUITES*/
     .fila-imagenes{
       width: 100%;
       height: 150%;
     }
 
+    /*FILA PEQUEÑA DE CONOZCA TODAS LAS PROPIEDADES QUE TIENE UN COLOR MEDIO GRIS*/
     #fila4{
       background-color: #cac7c7;
     }
 
+    /*HACER EL TEXTO DE VILLAS DEPARTAMENTOS Y SUITES EN COLOR BLANCO*/
     .texto-imagenes{
       color: #ffffff;
       -webkit-text-stroke: 1px rgb(162, 157, 157);
@@ -56,6 +63,25 @@
       background-color:  #e2dcdc;
       color: #635f5f;
     }
+
+    /*TEXTO DE LA FILA CINCO CON MARGEN Y LETRA EN BOLD*/
+    #text-fila-cinco{
+      margin-left: 20%;
+      font-weight: bold;
+      margin-top: 35%;
+    }
+
+    /*PONERLE BORDE AL TEXTO DE LA FILA CINCO*/
+    #col-row5{
+      border-style: solid;
+      border-color: #ffffff;
+      width: 40%;
+      height: 80%;
+      border-left-style: none;
+      margin-left: 15%;
+    }
+
+
 
     </style>
 </head>
@@ -92,7 +118,6 @@
         <!--SEGUNDA FILA PROYECTOS ECUADOR-->
 
         <hr>
-        
 
         <div class="row position-relative">
 
@@ -163,7 +188,7 @@
             <a href="#"><img class="fila-imagenes" src="https://images.adsttc.com/media/images/5a8e/392f/f197/cc42/b800/05bc/large_jpg/Maleku_3.jpg?1519270174" alt=""></a>
           </div>
         </div>
-        
+        {{-- <br><br><br><br><br><br><br><br> --}}
         <hr style="margin-top: 20%">
 
         <!--CUARTA FILA DE CONOZCA TODAS LAS PROPIEDADES-->
@@ -188,18 +213,18 @@
 
         <hr>
 
-        <!--QUINTA FILA IMAGEN DE CREDITO-->
+        {{--QUINTA FILA IMAGEN DE CREDITO--}}
         <div class="row position-relative">
           <img src="https://www.cuerpomente.com/medio/2019/11/04/familia_db408d1a_1200x630.jpg" class="img-fluid" alt="">
-          <h2 class="position-absolute">Lo que siempre has querido
-            <button class="btn btn-danger">Solicite un credito ></button>
-          </h2>
-          
+          <div id="col-row5" class="position-absolute top-50 start-0 translate-middle-y">
+            <h1 id="text-fila-cinco" class="text-light">¡Lo que siempre <br>has querido!</h1>
+            <button class="btn btn-danger float-end">Solicite un credito ></button>
+          </div>
         </div>
 
         <hr>
 
-        <!--SEXTA FILA ULTIMA-->
+        {{--SEXTA FILA ULTIMA--}}
         <div class="row m-5 pb-5">
           <div id="card-form" class="col-sm-5 text-center rounded">
             <h2 class="mt-5">INFORMACION DE CONTACTO</h2>
