@@ -19,7 +19,7 @@
     #linea_pequeña{
       width: 40px;
       height: 2px;
-      margin: auto;
+      margin-left: 50%;
       color: red;
       font-weight: bold;
     }
@@ -28,13 +28,15 @@
     #fila1, #fila3{
       background-color: #ffffff;
       opacity: 0.6;
-      height: 140px;
+      height: 20%;
     }
 
     /*Para que el texto de la parte opaca de la imagen no esta opaco*/
     #texto_fila1{
       font-weight: bold;
       color: #000000;
+      margin-top: 4%;
+      font-size: 2vw;
     }
 
     /*Segundo carrusel de la segunda fila en la imagen opaca*/
@@ -57,6 +59,7 @@
     .texto-imagenes{
       color: #ffffff;
       -webkit-text-stroke: 1px rgb(162, 157, 157);
+      font-size: 3vw;
     }
 
     #card-form{
@@ -68,7 +71,8 @@
     #text-fila-cinco{
       margin-left: 20%;
       font-weight: bold;
-      margin-top: 35%;
+      margin-top: 30%;
+      font-size: 4vw;
     }
 
     /*PONERLE BORDE AL TEXTO DE LA FILA CINCO*/
@@ -81,7 +85,49 @@
       margin-left: 15%;
     }
 
+    /*TAMAÑO AL TEXTO DEL BOTON PARA HACERLO RESPONSIVE*/
+    #btn-row5{
+      font-size: 1.5vw;
+    }
 
+    /*TAMAÑO AL TITULO DE LA FILA2*/
+    #text-row2{
+      font-size: 2.5vw;
+    }
+
+    /*PARRAFO DE LA FILA 2 CONOCE CADA UNO DE LOS PROYECTOS QUE TENEMOS*/
+    #parrafo-fila2{
+      font-size: 1.5vw;
+    }
+
+    /*BOTON DE LA FILA 2 VER TODOS LOS PROYECTOS*/
+    .link-fila2{
+      font-size: 1.5vw;
+    }
+
+    /*TEXTO DE PARTNERS*/
+    #text-partners{
+      font-size: 3vw;
+    }
+
+    /*TITULO DEL SEGUNDO CARRUSEL PEQUEÑO*/
+    .text-carrusel-title{
+      font-size: 1.5vw;
+    }
+
+    /*DESCRIPCION DEL SEGUNDO CARRUSEL PEQUEÑO*/
+    .text-description-carrusel{
+      font-size: 1.1vw;
+    }
+
+    /*TITULO DE LA FILA 6 INFORMACION DE CONTACTO*/
+    #text-row6{
+      font-size: 2.5vw;
+    }
+
+    .text-second-row6{
+      font-size: 1.5vw;
+    }
 
     </style>
 </head>
@@ -129,16 +175,15 @@
             </div>
 
             <div class="row">
-              <div class="col-sm-12 col-md-6 position-absolute top-50 start-0 translate-middle-y mr-5">
+              <div class="col-6 col-sm-6 col-md-6 p-3 position-absolute top-50 start-0 translate-middle-y mr-5">
                 <div class="text-center">
-                  <h3>Proyectos Ecuador</h3>
-                  <p>Conoce cada uno de los proyectos que tenemos y conoce la nueva experiencia en proyectos inmobiliarios</p>
-                  <br>
-                  <a href="#">Ver todos los proyectos ></a>
+                  <h3 id="text-row2">Proyectos Ecuador</h3>
+                  <p id="parrafo-fila2">Conoce cada uno de los proyectos que tenemos y conoce la nueva experiencia en proyectos inmobiliarios</p>
+                  <a class="link-fila2" href="#">Ver todos los proyectos ></a>
                 </div>
               </div>
-              <div class="col-sm-12 col-md-6 position-absolute top-50 end-0 translate-middle-y">
-                <div class="carrusel">
+              <div class="col-6 col-sm-6 col-md-6 p-3 position-absolute top-50 end-0 translate-middle-y">
+                <div class="carrusel m-1">
                   <div id="carouselExampleControls2" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
                       <div class="carousel-item active">
@@ -160,14 +205,14 @@
                       <span class="visually-hidden">Next</span>
                     </button>
                   </div>  
-                  <h6>Ohio Quito</h6>
-                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis consectetur accusamus dicta quam recusandae. Quae distinctio velit id facilis illum autem libero. Quae at magni aliquam quos voluptates rem porro.</p>
                 </div>
+                <h5 class="text-carrusel-title">Ohio Quito</h5>
+                <p class="text-description-carrusel">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis consectetur accusamus dicta quam recusandae. Quae distinctio velit id facilis illum autem libero. Quae at magni aliquam quos voluptates rem porro.</p>
               </div>
             </div>
 
             <div id="fila3" class="row position-absolute bottom-0">
-              <h3 class="text-center">Partners</h3>
+              <h3 id="text-partners" class="text-center">Partners</h3>
             </div>
         </div>
 
@@ -175,27 +220,27 @@
 
         <!--TERCERA FILA-->
         <div id="row3" class="row">
-          <div class="col-sm-4">
+          <div class="col-4 col-sm-4 col-md-4">
             <h1 class="texto-imagenes">VILLAS</h1>
             <a href="#"><img class="fila-imagenes" src="https://q-xx.bstatic.com/xdata/images/hotel/max1024x768/270955089.jpg?k=0ff923c4d7ef12ce13b44cc582d44ac8ac4d424ef6871d492e96301d5b27211b&o=" alt=""></a>
           </div>
-          <div class="col-sm-4">
+          <div class="col-4 col-sm-4">
             <h1 class="texto-imagenes">DEPARTAMENTOS</h1>
             <a href="#"><img class="fila-imagenes" src="https://media-cdn.tripadvisor.com/media/vr-splice-j/0a/9a/35/22.jpg" alt=""></a>
           </div>
-          <div class="col-sm-4">
+          <div class="col-4 col-sm-4">
             <h1 class="texto-imagenes">SUITES</h1>
             <a href="#"><img class="fila-imagenes" src="https://images.adsttc.com/media/images/5a8e/392f/f197/cc42/b800/05bc/large_jpg/Maleku_3.jpg?1519270174" alt=""></a>
           </div>
         </div>
 
-        <hr style="margin-top: 20%">
+        <hr style="margin-top: 25%">
 
         <!--CUARTA FILA DE CONOZCA TODAS LAS PROPIEDADES-->
         <div id="fila4" class="row">
 
           <div class="col-sm-6">
-            <h3 class="text-center mt-5">Conozca todas las propiedades
+            <h3 id="text-row4" class="text-center mt-5">Conozca todas las propiedades
               <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
                 <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
               </svg>
@@ -205,7 +250,7 @@
           <div class="col-sm-6">
             <p class="mt-5">Casa Credito Promotora Inmobiliaria, el portal que cambiará la perspectiva de promocionar inmuebles en Ecuador</p>
             <div class="mb-5">
-              <button class="btn btn-secondary">Nosotros</button><button class="btn btn-secondary">Presentación</button>
+              <button class="btn btn-secondary m-1">Nosotros</button><button class="btn btn-secondary">Presentación</button>
             </div>
           </div>
 
@@ -218,7 +263,7 @@
           <img src="https://www.cuerpomente.com/medio/2019/11/04/familia_db408d1a_1200x630.jpg" class="img-fluid" alt="">
           <div id="col-row5" class="position-absolute top-50 start-0 translate-middle-y">
             <h1 id="text-fila-cinco" class="text-light">¡Lo que siempre <br>has querido!</h1>
-            <button class="btn btn-danger float-end">Solicite un credito ></button>
+            <button id="btn-row5" class="btn btn-danger float-end">Solicite un credito ></button>
           </div>
         </div>
 
@@ -227,9 +272,9 @@
         <!--SEXTA FILA ULTIMA-->
         <div class="row m-5 pb-5">
           <div id="card-form" class="col-sm-5 text-center rounded">
-            <h2 class="mt-5">INFORMACION DE CONTACTO</h2>
-            <p>info@casacreditopromotora.com</p>
-            <p>+593 983 849 073</p>
+            <h2 id="text-row6" class="mt-5">INFORMACION DE CONTACTO</h2>
+            <p class="text-second-row6">info@casacreditopromotora.com</p>
+            <p class="text-second-row6">+593 983 849 073</p>
           </div>
           <div class="col-sm-7 pb-5">
             <form class="">
