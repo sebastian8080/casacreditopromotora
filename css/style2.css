@@ -1,0 +1,126 @@
+img{
+    width: 100%;
+    height: 100%;
+}
+
+/*Linea pequeña debajo de BIENVENIDOS A SU NUEVO HOGAR Y A SU MEJOR INVERSION*/
+#linea_pequeña{
+  width: 40px;
+  height: 2px;
+  margin-left: 50%;
+  color: red;
+  font-weight: bold;
+}
+
+/*Para hacer la parte superior e inferior opaca de la imagen de la segunda fila*/
+#fila1, #fila3{
+  background-color: #ffffff;
+  opacity: 0.6;
+  height: 20%;
+}
+
+/*Para que el texto de la parte opaca de la imagen no esta opaco*/
+#texto_fila1{
+  font-weight: bold;
+  color: #000000;
+  margin-top: 4%;
+  font-size: 2vw;
+}
+
+/*Segundo carrusel de la segunda fila en la imagen opaca*/
+.carrusel{
+  margin: 70px;
+}
+
+/*Tres imagenes de VILLAS DEPARTAMENTOS Y SUITES*/
+.fila-imagenes{
+  width: 100%;
+  height: 150%;
+}
+
+/*FILA PEQUEÑA DE CONOZCA TODAS LAS PROPIEDADES QUE TIENE UN COLOR MEDIO GRIS*/
+#fila4{
+  background-color: #cac7c7;
+}
+
+/*HACER EL TEXTO DE VILLAS DEPARTAMENTOS Y SUITES EN COLOR BLANCO*/
+.texto-imagenes{
+  color: #ffffff;
+  -webkit-text-stroke: 1px rgb(162, 157, 157);
+  font-size: 3vw;
+}
+
+#card-form{
+  background-color:  #e2dcdc;
+  color: #635f5f;
+}
+
+/*TEXTO DE LA FILA CINCO CON MARGEN Y LETRA EN BOLD*/
+#text-fila-cinco{
+  margin-left: 20%;
+  font-weight: bold;
+  margin-top: 30%;
+  font-size: 4vw;
+}
+
+/*PONERLE BORDE AL TEXTO DE LA FILA CINCO*/
+#col-row5{
+  border-style: solid;
+  border-color: #ffffff;
+  width: 40%;
+  height: 80%;
+  border-left-style: none;
+  margin-left: 15%;
+}
+
+/*TAMAÑO AL TEXTO DEL BOTON PARA HACERLO RESPONSIVE*/
+#btn-row5{
+  font-size: 1.5vw;
+}
+
+/*TAMAÑO AL TITULO DE LA FILA2*/
+#text-row2{
+  font-size: 2.5vw;
+}
+
+/*PARRAFO DE LA FILA 2 CONOCE CADA UNO DE LOS PROYECTOS QUE TENEMOS*/
+#parrafo-fila2{
+  font-size: 1.5vw;
+}
+
+/*BOTON DE LA FILA 2 VER TODOS LOS PROYECTOS*/
+.link-fila2{
+  font-size: 1.5vw;
+}
+
+/*TEXTO DE PARTNERS*/
+#text-partners{
+  font-size: 3vw;
+}
+
+/*TITULO DEL SEGUNDO CARRUSEL PEQUEÑO*/
+.text-carrusel-title{
+  font-size: 1.5vw;
+}
+
+/*DESCRIPCION DEL SEGUNDO CARRUSEL PEQUEÑO*/
+.text-description-carrusel{
+  font-size: 1.1vw;
+}
+
+/*TITULO DE LA FILA 6 INFORMACION DE CONTACTO*/
+#text-row6{
+  font-size: 2.5vw;
+  margin-top: 15%;
+}
+
+/*CORREO Y NUMERO DE LA ULTIMA FILA*/
+.text-second-row6{
+  font-size: 1.5vw;
+}
+
+.img-logo{
+  width: 30%;
+}
+
+/*CONFIGURACION DEL SLIDER*/
