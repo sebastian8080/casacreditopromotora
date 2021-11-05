@@ -1,7 +1,7 @@
   /*MARGIN LEFT DEL NAVBAR EMPEZANDO DESDE 'NOSOTROS'*/
   #navbarNav{
     margin-top:2%;
-    margin-left: 45%;
+    padding-left: 45%;
   }
 
   /*DIV QUE ENCIERRA AL CARROUSEL, EL TEXTO DENTRO DEL CARROUSEL Y EL BOTON*/
@@ -22,6 +22,61 @@
     font-size: 1.5vw;
   }
 
+  /*CAMBIAR DESPACIO EL COLOR DEL NAVBAR AL SCROLLEAR*/
   .navbar-dark, .navbar-light{
       transition: all 0.5s;
+  }
+
+  /*DARLE COLOR MEDIO GRIS A LA SEGUNDA FILA*/
+  .second-row{
+      background-color: #f5f0f0;
+  }
+
+  #second-row{
+    margin-left: 25%;
+    margin-right: 25%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+
+  #linea_pequeña{
+    width: 40px;
+    height: 2px;
+    margin: auto;
+    color: red;
+    font-weight: bold;
+  }
+
+  /*TEXTO DE TITULOS DE VILLAS DEPARTAMENTOS Y SUITES*/
+  .texto-imagenes{
+    color: #ffffff;
+    -webkit-text-stroke: 1px rgb(162, 157, 157);
+    font-size: 3vw;
+    text-align: center;
+    font-size: 3vw;
+  }
+
+  /*IMAGENES DE VILLAS DEPARTAMENTOS Y SUITES*/
+  .fila-imagenes{
+    width: 100%;
+    height: 110%;
+    padding-bottom: 20%;
+  }
+
+  /*PARA CENTRAR AL TEXTO DE LA FILA 3 ENCIMA DEL LINK*/
+  .text-row-3{
+    padding-top: 25%;
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+
+  /*ESTAS DOS CLASES SON PARA EL LINK DE LA FILA 3*/
+  .link-row3:hover {
+    font-size:20px;
+    color:#100;
+  }
+
+  /*HACER EL LINK DE LA FILA 3 DE COLOR NEGRO*/
+  .link-row3{
+    color: #100;
   }
