@@ -1,0 +1,27 @@
+  /*MARGIN LEFT DEL NAVBAR EMPEZANDO DESDE 'NOSOTROS'*/
+  #navbarNav{
+    margin-top:2%;
+    margin-left: 45%;
+  }
+
+  /*DIV QUE ENCIERRA AL CARROUSEL, EL TEXTO DENTRO DEL CARROUSEL Y EL BOTON*/
+  .div-carousel{
+    position: relative;
+  }
+
+  /*TEXTO QUE ESTA DENTRO DEL CARROUSEL*/
+  .texto-carousel{
+    position: absolute;
+    color: #ffffff;
+    z-index: 10;
+    font-size: 3vw;
+  }
+
+  /*BOTON DEL CAROUSEL 'VER PROPIEDADES'*/
+  #btn-carousel{
+    font-size: 1.5vw;
+  }
+
+  .navbar-dark, .navbar-light{
+      transition: all 0.5s;
+  }
