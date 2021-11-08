@@ -108,7 +108,8 @@
 
   /*ESTILO DE LA FILA 6 DE LA FOTO DE CREDITO*/
 #row6{
-  padding:20%;
+  padding-top: 20%;
+  padding-left: 25%;
 }
 
 #text-row6{
