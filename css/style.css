@@ -106,4 +106,32 @@
     transform: scale(1.2);
   }
 
+  /*ESTILO DE LA FILA 6 DE LA FOTO DE CREDITO*/
+#row6{
+  padding:20%;
+}
+
+#text-row6{
+  font-size: 3vw;
+}
+
+#btn-row6{
+  font-size: 1.5vw;
+}
+
+/*ESTILO DE LA CARD DE CONTACTO*/
+
+#title-row7, #text1-row7, #text2-row7{
+  color: #918f8f;
+  margin: 5%;
+} 
+
+#card-form{
+  background-color: #e2e0e0;
+}
+
+#form{
+  background-color: #f8f6f6 ;
+}
+
   
