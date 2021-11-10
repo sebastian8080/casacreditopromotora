@@ -1,65 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Partners</title>
+@extends('layouts.plantilla')
 
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="css/style-secondary-pages.css" />
+@section('title', 'Patrocinadores')
 
-    <!--EFECTOS DE APARECIMIENTO-->
-    <!--<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />-->
-  </head>
-  <body>
-    <!--NAV BAR -->
-    <nav id="menu" class="navbar navbar-expand-lg fixed-top navbar-dark">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">LOGO</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul id="itemMenu" class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="about.html"
-                >NOSOTROS</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="projects.html">PROYECTOS</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="properties.html">PROPIEDADES</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="news.html">NOTICIAS</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="partners.html">PARTNERS</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">CONTACTANOS</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+@section('content-head')
+    <link rel="stylesheet" href="{{URL::asset('css/secondary-pages.css'); }}">
+@endsection
 
+@section('content')
     <div class="row p-5 m-5">
         <div class="col-sm-7">
             <img style="width: 95%; height: 80%" src="https://www.eltelegrafo.com.ec/media/k2/items/cache/a9acd391dcab35ed9e50f098d897f9ff_XL.jpg" alt="Imagen Banco Pichincha">
@@ -115,6 +62,8 @@
             </div>
         </div>
     </div>
+@endsection
 
-  </body>
-</html>
+@section('section-scripts')
+    <script src="{{ URL::asset('js/partners.js') }}"></script>
+@endsection
